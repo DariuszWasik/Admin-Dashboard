@@ -1,0 +1,23 @@
+.wrapper {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 5fr;
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas: "sidebar head"
+                        "sidebar main";
+}
+
+.sidebar {
+    background-color: turquoise;
+    grid-area: sidebar;
+}
+
+.head {
+    background-color: white;
+    grid-area: head;
+}
+
+.main {
+    background-color: sandybrown;
+    grid-area: main;
+}
