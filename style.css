@@ -47,15 +47,16 @@
 
 
 :root {
-  --white-col: azure;
+  --white-clr: azure;
   --blue-bg: #0ea5e9; 
+  --light-blue: #e2e8f0;
 }
 
 
 .wrapper {
-    font-family: Geneva, Verdana, sans-serif;
+    font-family: Roboto,Geneva, Verdana, sans-serif;
     font-weight: 549;
-    background-color: var(--white-col);
+    background-color: var(--white-clr);
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 5fr;
     grid-template-rows: 1fr 8fr;
@@ -64,7 +65,7 @@
 }
 
 .sidebar {
-    color: var(--white-col);
+    color: var(--white-clr);
     background-color: var(--blue-bg);
     grid-area: sidebar;
     display: grid;
@@ -80,7 +81,7 @@
  
  .menuPicker svg {
     height: 1rem;
-    fill: var(--white-col);
+    fill: var(--white-clr);
  }
 
  .dashboard {
@@ -94,18 +95,17 @@
 
 a {
     text-decoration: none;
-    color: var(--white-col);
+    color: var(--white-clr);
 }
 .head {
     font-size: 0.7rem;
-    font-weight: bold;
+    font-weight: 550;
     background-color: white;
     grid-area: head;
     display: grid;
-    grid-template: 60px 100px / 1fr 1fr;
+    grid-template: 60px 90px / 1fr 1fr;
 }
 .head > * {
-  border: 1px red solid;
   display: flex;
   align-items: center;
   padding-left: 2rem;
@@ -114,7 +114,7 @@ a {
 
 .btn {
   background-color: var(--blue-bg);
-  color: var(--white-col);
+  color: var(--white-clr);
   border-radius: 1rem;
   padding: 5px 20px;
   border: none;
@@ -134,3 +134,16 @@ a {
     background-color: sandybrown;
     grid-area: main;
 }
+
+.name {
+  font-size: 1.1rem;
+}
+
+#search {
+  flex-grow: 1;
+  border-radius: 0.5rem;
+  background-color: var(--light-blue);
+  border: none;
+  padding: 0.2rem;
+}
+
