@@ -45,9 +45,17 @@
     isolation: isolate;
   }
 
+
+:root {
+  --white-col: azure;
+  --blue-bg: #0ea5e9; 
+}
+
+
 .wrapper {
     font-family: Geneva, Verdana, sans-serif;
-    background-color: aliceblue;
+    font-weight: 549;
+    background-color: var(--white-col);
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 5fr;
     grid-template-rows: 1fr 8fr;
@@ -56,8 +64,8 @@
 }
 
 .sidebar {
-    color: azure;
-    background-color: #0ea5e9;
+    color: var(--white-col);
+    background-color: var(--blue-bg);
     grid-area: sidebar;
     display: grid;
     grid-template-rows: 60px repeat(auto-fit, 30px);
@@ -72,7 +80,7 @@
  
  .menuPicker svg {
     height: 1rem;
-    fill: azure;
+    fill: var(--white-col);
  }
 
  .dashboard {
@@ -86,11 +94,40 @@
 
 a {
     text-decoration: none;
-    color: azure;
+    color: var(--white-col);
 }
 .head {
+    font-size: 0.7rem;
+    font-weight: bold;
     background-color: white;
     grid-area: head;
+    display: grid;
+    grid-template: 60px 100px / 1fr 1fr;
+}
+.head > * {
+  border: 1px red solid;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: var(--blue-bg);
+  color: var(--white-col);
+  border-radius: 1rem;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.topRight, .buttons {
+  justify-self: end;
+  padding-right: 3rem;
+}
+
+.topRight {
+  padding-right: 5rem;
 }
 
 .main {
