@@ -48,7 +48,9 @@
 
 :root {
   --white-clr: azure;
+  --white-hov: rgba(240, 255, 255, 0.266);
   --blue-bg: #0ea5e9; 
+  --blue-hov: #0ea4e98b;
   --light-blue: #e2e8f0;
 }
 
@@ -93,10 +95,15 @@
     height: 2rem;
 }
 
-a {
+.sidebar a {
     text-decoration: none;
     color: var(--white-clr);
 }
+
+.sidebar a:hover{
+  color: var(--white-hov);
+}
+
 .head {
     font-size: 0.7rem;
     font-weight: 550;
@@ -119,6 +126,10 @@ a {
   padding: 5px 20px;
   border: none;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--blue-hov);
 }
 
 .topRight, .buttons {
@@ -169,6 +180,12 @@ a {
   padding: 1rem;
   border-left: 0.5rem solid darkgoldenrod;
   display: grid;
+  border-bottom: 0.15rem solid #cbd5e1;
+  border-right: 0.15rem solid #cbd5e1;
+}
+
+.project:hover{
+background-color: var(--white-hov);
 }
 
 h4 {
@@ -185,7 +202,7 @@ h5 {
   font-size: 0.6rem;
   font-weight: 300;
   display: grid;
-  grid-template-rows: 30px 330px 60px 330px;
+  grid-template-rows: 30px minmax(330px, min-content) 60px 250px;
   padding: 1rem;
   row-gap: 0.5rem;
 }
@@ -209,18 +226,56 @@ h5 {
   align-content: center;
   padding: 1rem;
   row-gap: 0.5rem;
-  }
+  border-bottom: 0.15rem solid #cbd5e1;
+  border-right: 0.15rem solid #cbd5e1;
+}
 
-  .an:nth-child(2) {
-    border-bottom: solid var(--light-blue) 2px;
-    border-top: solid var(--light-blue) 2px;
+.announcements:hover{
+  background-color: var(--white-hov);
+}
+
+.an:nth-child(2) {
+  border-bottom: solid var(--light-blue) 2px;
+  border-top: solid var(--light-blue) 2px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
-
+  .an h2{
+    margin-bottom: 0.2rem;
+    color: black;
+  }
 .trending {
   background-color: var(--white-clr);
   border-radius: 1rem;
+  display: grid;
+  grid-row: auto;
+  align-content: space-around;
+  border-bottom: 0.15rem solid #cbd5e1;
+  border-right: 0.15rem solid #cbd5e1;
+}
+
+
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.trending:hover{
+background-color: var(--white-hov);
+}
+
+.trend a {
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.trend p {
+  font-size: 0.7rem;
+  font-weight: 300;
 }
 
 
