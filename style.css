@@ -286,6 +286,7 @@ background-color: var(--white-hov);
 
 @media (max-width: 750px) {
   .wrapper {
+    width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: min-content;
     grid-template-areas: "head" "sidebar" "main" ;
@@ -297,5 +298,9 @@ background-color: var(--white-hov);
   .sidebar {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: row;
+  }
+  
+  .head {
+    padding-bottom: 1rem;
   }
 }
