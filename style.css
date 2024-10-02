@@ -150,9 +150,6 @@ a {
     grid-template-columns: 3fr minmax(150px, 1fr);
 }
 
-.main > *  {
-  border: solid 1px black;
-}
 
 .projects {
   display: grid;
@@ -180,12 +177,17 @@ h4 {
 
 h5 {
   font-size: 1.2rem;
-grid-column: 1 / -1;
-margin-left: 0.5rem;
+  grid-column: 1 / -1;
+  margin-left: 0.5rem;
 }
 
 .sideMain {
-  background-color: pink;
+  font-size: 0.6rem;
+  font-weight: 300;
+  display: grid;
+  grid-template-rows: 30px 330px 60px 330px;
+  padding: 1rem;
+  row-gap: 0.5rem;
 }
 
 .icons {
@@ -194,3 +196,31 @@ margin-left: 0.5rem;
   justify-self: end;
   align-self: flex-end;  
 }
+
+.sideMain h3 {
+  font-size: 1.2rem;
+  align-self: end
+}
+
+.announcements {
+  background-color: var(--white-clr);
+  border-radius: 1rem;
+  display: grid;
+  align-content: center;
+  padding: 1rem;
+  row-gap: 0.5rem;
+  }
+
+  .an:nth-child(2) {
+    border-bottom: solid var(--light-blue) 2px;
+    border-top: solid var(--light-blue) 2px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+.trending {
+  background-color: var(--white-clr);
+  border-radius: 1rem;
+}
+
+
