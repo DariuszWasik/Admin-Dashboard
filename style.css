@@ -202,7 +202,7 @@ h5 {
   font-size: 0.6rem;
   font-weight: 300;
   display: grid;
-  grid-template-rows: 30px minmax(330px, min-content) 60px 250px;
+  grid-template-rows: 30px minmax(330px, min-content) 60px minmax(250px, min-content);
   padding: 1rem;
   row-gap: 0.5rem;
 }
