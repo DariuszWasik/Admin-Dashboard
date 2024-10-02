@@ -279,3 +279,9 @@ background-color: var(--white-hov);
 }
 
 
+@media (max-width: 750px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "head" "main" "sidebar";
+  }
+}
