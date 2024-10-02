@@ -287,9 +287,15 @@ background-color: var(--white-hov);
 @media (max-width: 750px) {
   .wrapper {
     grid-template-columns: 1fr;
-    grid-template-areas: "head" "main" "sidebar";
+    grid-template-rows: min-content;
+    grid-template-areas: "head" "sidebar" "main" ;
   }
   .main {
     grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
   }
 }
